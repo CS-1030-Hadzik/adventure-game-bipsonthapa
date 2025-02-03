@@ -40,3 +40,4 @@ elif decision == "no":
     print(player_name + ", you decide to wait. Perhaps courage will find you later.") # Concatenation example
 else:
     print("Confused, you stand still, unsure of what to do.")
+    
