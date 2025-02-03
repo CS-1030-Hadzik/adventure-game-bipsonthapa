@@ -17,3 +17,15 @@ player_name =input("what is your name, adventure?")
 
 # Concentrate strings to create a personalized message
 print("welcome, " + player_name + "! Your jounrney begin now.")
+
+# Use an f-string to display the same message in a more readable way
+print(f"Welcome, {player_name}! Your journey begins now.")
+
+# Describe the starting area
+starting_area = """
+You find yourself in a dark forest.
+The sound of rustling leaves fills the air.
+A faint path lies ahead, leading deeper into the 
+unknown...
+"""
+print(starting_area)
