@@ -1,22 +1,22 @@
-'''
+"""
+Docstring:
 Adventure Game
-Author: Scott Hadzik
+Author: bipson thapa
 Version: 1.0
 Description:
 This is a text-based adventure game where the player makes choices
 to navigate through a mysterious forest.
-'''
+"""
 
+##Welcome message and introduction
+print("Welcome to the Adevnture Game!")
+print('Your journey begins here...')
 
-# Welcome message and introduction
-print("Welcome to the Adventure Game!")
-print("Your journey begins here...")
+#Ask for the player's name
+player_name = input("What is your name, adventurer? ")
 
-# Ask for the player's name
-player_name =input("what is your name, adventure?")
-
-# Concentrate strings to create a personalized message
-print("welcome, " + player_name + "! Your jounrney begin now.")
+#Concate nate strings to create a personalized messsage
+print("Welcome, " + player_name + "! Your journey begins now.")
 
 # Use an f-string to display the same message in a more readable way
 print(f"Welcome, {player_name}! Your journey begins now.")
@@ -25,26 +25,23 @@ print(f"Welcome, {player_name}! Your journey begins now.")
 starting_area = """
 You find yourself in a dark forest.
 The sound of rustling leaves fills the air.
-A faint path lies ahead, leading deeper into the 
+A faint paths lies ahead, leading deeper into the 
 unknown...
 """
 print(starting_area)
 
-# Ask the player for their first decision
-decision = input("Do you wish to take the path? (yes or no): ").lower()
+# Ask the players for their first decision
+decision = input("Do you wish to take the path?  (yes or no): ").lower()
 
-#Invalid response loop untill they give a valid 
-while decision not in ("yes,no"):
-   print("invalid choice .please type 'yes or no'.")
-   #option for the user to make a new decision 
-   decision=input("do you wish to take the path(yes or no)")
+# Invalid response loop until they give a valid
+while decision not in ["yes", "no"]:
+     print("Invalid choice. Please type 'yes' or 'no'.")
+     # option for the user to make a new decision
+     decision = input("Do you wish to take the path (yes or no): ").lower()
 
-
-# Respond based on the player's decision
+#Respond based on the player's decision
 if decision == "yes":
-    print(f"Brave choice, {player_name}! You step onto the path and venture forward.")
+    print(f"Brave choice, {player_name}!" " You step on the path and venture forward")
+
 elif decision == "no":
-    print(player_name + ", you decide to wait. Perhaps courage will find you later.") # Concatenation example
-else:
-    print("Confused, you stand still, unsure of what to do.")
-    
+    print(f"{player_name}, you decide to wait. Perhaps courage will find you later.")
